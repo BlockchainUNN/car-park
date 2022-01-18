@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arichen</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <main>
+        <!--seat selection -->
+        <div class="seat-selection">
+            <div class="seats">
+                <button class="how-to">HOW TO USE</button>
+                <p>Click on Seat to select/deselect</p>
+                <div class="checkboxes">
+                    <label for="seat1">1</label>
+                    <input type="checkbox">
+                    <label for="seat2">2</label>
+                    <input type="checkbox">
+                    <label for="seat3">3</label>
+                    <input type="checkbox">
+                    <label for="seat4">4</label>
+                    <input type="checkbox">
+                    <label for="seat5">5</label>
+                    <input type="checkbox">
+                    <label for="seat6">6</label>
+                    <input type="checkbox">
+                    <label for="seat7">7</label>
+                    <input type="checkbox">
+                    <label for="seat8">8</label>
+                    <input type="checkbox">
+                    <label for="seat9">9</label>
+                    <input type="checkbox">
+                    <label for="seat10">10</label>
+                    <input type="checkbox">
+                    <label for="seat11">11</label>
+                    <input type="checkbox">
+                    <label for="seat12">12</label>
+                    <input type="checkbox">
+                    <label for="seat13">13</label>
+                    <input type="checkbox">
+                    <label for="seat14">14</label>
+                    <input type="checkbox">
+                </div>
+                <h4>Total Seats Selected: <b id="totalSeats">0</b></h4>
+            </div>
+            <p>Use special discount code: <b>ARICHEN300</b></p>
+        </div>
+
+        <!-- input field and table -->
+        <div class="input-field">
+            <p>Pickup Location</p>
+            <select name="Pickup Location" id="pickup">
+                <option value="">Choose</option>
+            </select>
+            <p>Drop Location</p>
+            <select name="Drop Location" id="drop">
+                <option value="">Choose</option>
+            </select>
+            <p>Offer code</p>
+            <input type="text" id="offer-code" placeholder="Offer Code">
+            <p>Children</p>
+            <input type="number" id="children" placeholder="Children">
+            <p>Adult</p>
+            <input type="number" id="adult" placeholder="Adult">
+            <p>Special</p>
+            <input type="number" id="special" placeholder="Special">
+            <button class="tabulate">Tabulate</button>
+
+            <p><b>REQUEST FACILITIES</b></p>
+            <!-- table -->
+            <table>
+                <tr>
+                    <td>Seat(s)</td>
+                    <td id="seats-selected">0</td>
+                </tr>
+                <tr>
+                    <td>Price(s)</td>
+                    <td><b>Children(500), Adult(1500), Special(1000)</b></td>
+                </tr>
+                <tr>
+                    <td>Child Price</td>
+                    <td id="childrenPrice">0</td>
+                </tr>
+                <tr>
+                    <td>Adult Price</td>
+                    <td id="adultPrice">0</td>
+                </tr>
+                <tr>
+                    <td>Special Price</td>
+                    <td id="specialPrice">0</td>
+                </tr>
+                <tr>
+                    <td>Total</td>
+                    <td id="total">0</td>
+                </tr>
+                <tr>
+                    <td>Discount</td>
+                    <td id="discount">0</td>
+                </tr>
+                <tr>
+                    <td><b>Grand Total</b></td>
+                    <td id="grandTotal">0</td>
+                </tr>
+            </table>
+            <button class="how-to">Continue</button>
+        </div>
+        <script src="arichen.js"></script>
+    </main>
+    
+</body>
+</html>
