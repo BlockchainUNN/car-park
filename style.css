@@ -6,6 +6,13 @@ main{
     grid-template-columns: 1fr 3fr;
     column-gap: 20px;
 }
+@media(max-width: 960px){
+    main{
+        display: block;
+        width: 90%;
+        margin: 40px 20px 20px 20px;
+    }
+}
 .seats{
     border: 1px solid grey;
     text-align: center;
@@ -35,7 +42,7 @@ select{
     border: 1px solid grey;
 }
 .input-field input{
-    width: 98%;
+    width: 93%;
     padding: 10px;
     border-radius: 10px;
     border: 1px solid rgb(10, 10, 10);
@@ -47,9 +54,12 @@ select{
     width: 100px;
     height: 50px;
     color: white;
+    cursor: pointer;
 }
 table, td{
+    table-layout: fixed;
     width: 100%;
     margin: 20px 0px 20px 0px;
+    padding: 10px;
     border: 1px solid black;
 }
